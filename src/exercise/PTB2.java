@@ -1,0 +1,30 @@
+package exercise;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class PTB2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+
+        System.out.print("Phương trình bậc hai có dạng ax^2 + bx + c = 0\n" + "Nhập a, b, c: ");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+
+        if (a == 0) {
+            // phuong trinh bac nhat bx + c = 0
+            System.out.println("Phương trình trở thành phương trình bậc nhất " + decimalFormat.format(b) + "x + " + decimalFormat.format(c) + " = 0");
+            if (b == 0 && c == 0) {
+                System.out.println("Phương trình vô số nghiệm");
+            } else if (b == 0) {
+                System.out.println("Phương trình vô nghiệm");
+            } else if (c == 0) {
+                System.out.println("Phương trình có một nghiệm duy nhất x = 0");
+            } else {
+                System.out.println("Phương trình có một nghiệm duy nhất x = " + (-c / b));
+            }
+        }
+    }
+}
