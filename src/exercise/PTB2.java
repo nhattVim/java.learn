@@ -23,7 +23,19 @@ public class PTB2 {
             } else if (c == 0) {
                 System.out.println("Phương trình có một nghiệm duy nhất x = 0");
             } else {
-                System.out.println("Phương trình có một nghiệm duy nhất x = " + (-c / b));
+                System.out.println("Phương trình có một nghiệm duy nhất x = " + decimalFormat.format(-c / b));
+            }
+        } else {
+            // phuong trinh bac hai
+            double delta = Math.pow(b,2) - (4*a*c);
+            if (delta < 0){
+                System.out.println("Phương trình vô nghiệm");
+            } else if (delta == 0) {
+                System.out.println("Phương trình có nghiệm kép x1 = x2 = " + decimalFormat.format(-b/(2*a)) );
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / (2*a);
+                double x2 = (-b - Math.sqrt(delta)) / (2*a);
+                System.out.println("Phương trình có hai nghiệm phân biệt   x1 = " + decimalFormat.format(x1) +"   x2 = " + decimalFormat.format(x2));
             }
         }
     }
