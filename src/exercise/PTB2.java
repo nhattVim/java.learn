@@ -3,6 +3,15 @@ package exercise;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+/**
+*   author: nhattruongNeoVim
+*   since: 27/10/2023 20:31
+*   description: Giải phương trình bậc 2
+*   update:
+*           - nhattruongNeoVim(27/10/2023 20:32)
+*
+*/
+
 public class PTB2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
