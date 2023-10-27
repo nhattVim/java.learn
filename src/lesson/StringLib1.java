@@ -18,6 +18,7 @@ public class StringLib1 {
          *      append(String)              Adds the given string to the end of the string
          *      insert(index, String)       Inserts the given string at the given index into the string
          *      delete(start, end)          Deletes all characters from the start to end - 1
+         *      reverse(String)             Returns the reversed string
          *      string.Length()             Returns the length of the string (including whitespace)
          */
 
@@ -37,7 +38,10 @@ public class StringLib1 {
         mess.delete(0, 6);
         System.out.println(mess);
 
-        // 4.length
+        // 4.reverse
+        System.out.println(mess.reverse());
+
+        // 5.length
         System.out.println(mess.length());
     }
 }

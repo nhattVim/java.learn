@@ -27,13 +27,13 @@ public class StringLib2 {
         String mess = "I am student of Quy Nhon University, a very good student";
         System.out.println(mess);
 
-        // 5.indexOf
+        // 6.indexOf
         System.out.println("the index of the first 'student' is: " + mess.indexOf("student"));
 
-        // 6.lastIndexOf
+        // 7.lastIndexOf
         System.out.println("the index of the last 'student' is: " + mess.lastIndexOf("student"));
 
-        // 7.contains
+        // 8.contains
         System.out.println();
         String link = "https://github.com/nhattruongNeoVim/dotfiles";
         System.out.println("link: " + link);
@@ -46,7 +46,7 @@ public class StringLib2 {
             System.out.println("not found " + check + " in " + "link");
         }
 
-        // 8.substring
+        // 9.substring
         System.out.println();
         String message ="abcdefghijklmnopqrstuvwxyz";
         System.out.println(message);
@@ -54,14 +54,14 @@ public class StringLib2 {
         String sub2 = message.substring(4, 8);
         System.out.println("substr from 4 to end: " + sub1 + "\n" + "substring from 4 to 8: " + sub2);
 
-        // 9.replace
+        // 10.replace
         System.out.println();
         String rfMess = mess.replaceFirst("student", "teacher");
         System.out.println(rfMess);
         String raMess = mess.replaceAll("student", "teacher");
         System.out.println(raMess);
 
-        // 10.trim
+        // 11.trim
         System.out.println();
         String trimMess = "          this is trimmed          ";
         System.out.println(trimMess);
@@ -75,25 +75,25 @@ public class StringLib2 {
          *         \: is a special symbol in Java, so we need \\
          * */
 
-        // 10.1 trimEnd
-        // 10.1.1 use regular expression
+        // 11.1 trimEnd
+        // 11.1.1 use regular expression
         trimMess = "          trimmed          ";
         String trimEnd = trimMess.replaceAll("\\s+$", "");
         System.out.println(trimEnd);
 
-        // 10.1.2 use while
+        // 11.1.2 use while
         while (trimMess.endsWith(" ")){
             trimMess = trimMess.substring(0, trimMess.length() - 1);
         }
         System.out.println(trimMess);
 
-        // 10.2 trimStart
-        // 10.2.1 use regular expression
+        // 11.2 trimStart
+        // 11.2.1 use regular expression
         trimMess = "          trimmed          ";
         String trimStart = trimMess.replaceAll("^\\s+", "");
         System.out.println(trimStart);
 
-        // 10.2.2 use while
+        // 11.2.2 use while
         while (trimMess.startsWith(" ")){
             trimMess = trimMess.substring(1);
         }
