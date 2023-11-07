@@ -47,5 +47,6 @@ public class PTB2 {
                 System.out.println("Phương trình có hai nghiệm phân biệt   x1 = " + decimalFormat.format(x1) +"   x2 = " + decimalFormat.format(x2));
             }
         }
+        sc.close();
     }
 }

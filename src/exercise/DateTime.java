@@ -32,5 +32,6 @@ public class DateTime {
         Calendar current = Calendar.getInstance();
         age = current.get(Calendar.YEAR) - birthday.get(Calendar.YEAR);
         System.out.println("Your age is " + age + " years old");
+        input.close();
     }
 }
